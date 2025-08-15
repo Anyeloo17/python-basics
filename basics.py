@@ -32,3 +32,36 @@ print(type('hola mundo'))
 print(type(0.5))
 print(type(1 < 6))
 print(type(None))
+
+#VARIABLES
+#son espacios de memoria donde se guardan datos y se les asigna un nombre
+#para crear  uan variable se  usa el signo igual(=) y se le asigan un nombre o valor
+x=5
+name="anyelo la bestia la maquina el animal"
+print(x)
+print(name)
+#tipado dinamico: en python no es necesiario declarar el tipo de dato en una variable ya q lo hace automaticamente
+#y podemoscambair el tipo de dato de uan variable en cuanquier momento 
+
+# tipado fuerte:python no hace conversiones de tipos de datos automaticamnete, por lo q sisumamos un int y un str nos dara un error
+#para cambiar el tipo de dato de una variable se usa la funcion srt() o int() ofloat() o bool() segun el tipo de dato q queramos cambiar
+x=5
+
+print(type(x))
+print(type(str(x)))
+
+pan=54
+print(pan)
+#asi convertimos un int en str
+pan=str(pan)
+print(type(pan))
+#la funcion f-strings permite crear cadenas de texto con variables dentro de ellas Y cada variable va encerrada entra llaves{}
+
+
+
+#FUNCION IMPUT
+
+
+
+
+
