@@ -56,10 +56,71 @@ print(pan)
 pan=str(pan)
 print(type(pan))
 #la funcion f-strings permite crear cadenas de texto con variables dentro de ellas Y cada variable va encerrada entra llaves{}
-
+nombre="anyelo"
+edad=18
+ciudad="miami"
+print(f"hola me llamo {nombre}, tengo {edad} y vivo en {ciudad}")
 
 
 #FUNCION IMPUT
+# Para obtener datos del usuario se usa la función input()
+# La función input() recibe un mensaje que se muestra al usuario
+# y devuelve el valor introducido por el usuario
+nombre = input("Hola, ¿cómo te llamas?\n")
+print(f"Hola {nombre}, encantado de conocerte")
+
+# Ten en cuenta que la función input() devuelve un string
+# Así que si queremos obtener un número se debe convertir el string a un número
+age = input("¿Cuántos años tienes?\n")
+age = int(age)
+print(f"Tienes {age} años")
+
+# La función input() también puede devolver múltiples valores
+# Para hacerlo, el usuario debe separar los valores con una coma
+print("Obtener múltiples valores a la vez")
+country, city = input("¿En qué país y ciudad vives?\n").split()
+
+print(f"Vives en {country}, {city}")
+
+
+#CONDICINALES (if, else, elif)
+print("\n Sentencia simple condicional")
+# Podemos usar la palabra clave "if" para ejecutar un bloque de código
+# solo si se cumple una condición.
+edad = 18
+if edad >= 18:
+  print("Eres mayor de edad")
+  print("¡Felicidades!")
+
+# Si no se cumple la condición, no se ejecuta el bloque de código
+edad = 15
+if edad >= 18:
+  print("Eres mayor de edad")
+  print("¡Felicidades!")
+
+# Podemos usar el comando "else" para ejecutar un bloque de código
+# si no se cumple la condición anterior del if
+print("\n Sentencia condicional con else")
+edad = 15
+if edad >= 18:
+  print("Eres mayor de edad")
+else:
+  print("Eres menor de edad")
+
+print("\n Sentencia condicional con elif")
+nota = 5
+
+# Además de usar "if" y "else", podemos usar "elif" para determinar
+# múltiples condiciones, ten en cuenta que sólo se ejecutará el primer bloque
+# de código que cumpla la condición (o la del else, si está presente)
+if nota >= 9:
+  print("¡Sobresaliente!")
+elif nota >= 7:
+  print("Notable!")
+elif nota >= 5:
+  print("¡Aprobado!")
+else:
+  print("¡No está calificado!")
 
 
 
