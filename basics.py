@@ -122,7 +122,20 @@ elif nota >= 5:
 else:
   print("¡No está calificado!")
 
+#podemos uasar operadores logicos como AND, OR , NOT para combinar condiciones
 
+print("\n sentencia condicinal con operadores logicos")
 
+edad =3
+if edad >= 18 and edad < 60:
+  print("eres un adulto")
+
+if edad ==18 or edad==60:
+  print("eres mayor de edad")
+
+if edad ==3:
+  print('eres  muy joven')
+else:
+  print('eres un adulto mayyotr')
 
 
