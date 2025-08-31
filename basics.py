@@ -125,17 +125,38 @@ else:
 #podemos uasar operadores logicos como AND, OR , NOT para combinar condiciones
 
 print("\n sentencia condicinal con operadores logicos")
-
+#cunado usamos el operador and, ambas conndiciones deben cumplisrse o ser verdadereas 
 edad =3
 if edad >= 18 and edad < 60:
   print("eres un adulto")
-
+# cunado usamos el operador or culquieraa de las dos condiciones debe cumplirse o ser verdadera
 if edad ==18 or edad==60:
   print("eres mayor de edad")
 
-if edad ==3:
-  print('eres  muy joven')
-else:
-  print('eres un adulto mayyotr')
+# cunado usamos el operador not, se invierte la condicion
+if not edad >= 18:
+  print("eres menor de edad")
 
+
+# Podemos anidar condicionales, uno dentro del otro
+# para determinar múltiples condiciones aunque
+# siempre intentaremos evitar esto para simplificar
+print("\n Anidar condicionales")
+edad = 20
+tiene_dinero = True
+
+if edad >= 18:
+  if tiene_dinero:
+    print("Puedes ir a la discoteca")
+  else:
+    print("Quédate en casa")
+else:
+  print("No puedes entrar a la disco")
+  #esta es la forma mas compleja de hacelo y siempre hay q tratar de evitarlo 
+
+  # una forma sencilla de hacerlo es con operadores logicos
+  if edad >= 18 and tiene_dinero:
+    print("puedes ir a la disco")
+  else:
+    print("no puedes ir")
 
